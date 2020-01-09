@@ -1,0 +1,29 @@
+@import '../../../styles/settings';
+
+.component {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  @include flex(row, center, space-between);
+}
+
+.menu {
+  @include flex(row, center, space-between);
+  margin-right: 50px;
+}
+
+.listItem {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 5px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.logo {
+  color: #fff;
+}
