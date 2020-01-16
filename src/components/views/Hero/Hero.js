@@ -1,14 +1,16 @@
 import React from 'react';
 
+import Button from '../../common/Button/Button';
+
 import styles from './Hero.module.scss';
 
-const Hero = ({ text }) => (
+const Hero = ({ text, clicked }) => (
   <div className='section'>
     <div className={styles.bg}>
-      {/* <Nav /> */}
       <div className={styles.glitch} data-text={text}>
         {text}
       </div>
+      <Button variant='hero bg' onClick={clicked}>Begin the journey</Button>
     </div>
   </div>
 );

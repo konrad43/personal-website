@@ -1,0 +1,56 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  background: $color-primary;
+  border: 0;
+  color: $color-light;
+  text-align: center;
+  line-height: 1.3;
+  padding: $base-size;
+  margin: 0 $base-size;
+  border-radius: $radius;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: $transition;
+  background-position: 100% 0;
+  background-size: 300%;
+
+&:hover {
+    background-position: 0 100%;
+    color: #fff;
+}
+
+  // &:hover {
+  //   background: darken($color-success, 5%);
+  // }
+
+  &.danger {
+    background: $color-primary;
+    &:hover {
+      background: darken($color-primary, 5%);
+    }
+  }
+
+  &.bg {
+    font-size: 36px;
+    padding: $base-size * 1.5;
+    font-weight: normal;
+  }
+
+  &.hero {
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    transition: all 1s;
+    background-image: linear-gradient(90deg, $color-primary 50%, transparent 50%);
+
+    &:hover {
+      // color: #fff;
+      // border: 1px solid #fff;
+      color: #000;
+      background-color: $color-primary;
+    }
+  }
+}
+
