@@ -1,0 +1,18 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  height: 100vh;
+  width: 25%;
+  // background-color: #27ae60;
+  background-color: #00cec9;
+}
+
+.card {
+  @include center();
+  width: 80%;
+  height: 70vh;
+  border-radius: 5px;
+  background-color: #fff;
+  opacity: 0.9;
+  box-shadow: 10px 10px 10px;
+}

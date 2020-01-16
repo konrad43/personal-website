@@ -1,0 +1,28 @@
+{
+  "skills": [
+    {
+      "name": "React",
+      "icon": "fab fa-react"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "fab fa-js-square"
+    },
+    {
+      "name": "CSS",
+      "icon": "fab fa-css3-alt"
+    },
+    {
+      "name": "HTML",
+      "icon": "fab fa-html5"
+    },
+    {
+      "name": "Python",
+      "icon": "fab fa-python"
+    },
+    {
+      "name": "Git",
+      "icon": "fab fa-git-square"
+    }
+  ]
+}

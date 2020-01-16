@@ -6,8 +6,8 @@ const Nav = () => (
   <nav className={styles.component}>
     <div className={styles.logo}>Logo</div>
     <ul id='nav' className={styles.menu}>
-      <li className={styles.listItem} data-menuanchor='firstPage'>
-        <a href='#firstPage'>First section</a>
+      <li className={styles.listItem} data-menuanchor='top'>
+        <a href='#top'>First section</a>
       </li>
       <li className={styles.listItem} data-menuanchor='secondPage'>
         <a href='#secondPage'>Second section</a>

@@ -1,0 +1,47 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  @include flex(row, center, space-between);
+}
+
+.title, .titleDark {
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+
+.title {
+  color: #fff;
+}
+
+.titleDark {
+  color: #222;
+}
+
+.left {
+  height: 100vh;
+  width: 50%;
+  @include flex(row, center, space-between);
+  background-color: whitesmoke;
+}
+// .card {
+//   @include center();
+//   width: 80%;
+//   height: 70vh;
+//   border-radius: 5px;
+//   background-color: #fff;
+//   opacity: 0.9;
+//   box-shadow: 10px 10px 10px;
+// }
+.right {
+  width: 50%;
+  @include flex(column, center, center);
+}
+
+
+.cardWrapper {
+  width: 70%;
+  max-width: 400px;
+  @include flex(row, center, center);
+  flex-wrap: wrap;
+}
+

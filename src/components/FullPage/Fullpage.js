@@ -3,35 +3,55 @@ import ReactFullpage from '@fullpage/react-fullpage';
 
 import Hero from '../views/Hero/Hero';
 import HeroAlt from '../views/HeroAlt/HeroAlt';
+import Skills from '../views/Skills/Skills';
+import SkillsAlt from '../views/Skills2/Skills';
 
-const Fullpage = () => (
-    <ReactFullpage
+const colors = {
+  skills: '#e1e1e1',
+  skillsAlt: '#00cec9',
+}
+
+class Fullpage extends React.Component {
+  state = {
+    page: '',
+  };
+  
+  handleAfterLoad = (_, dest) => this.setState({page: dest.anchor});
+
+  render() {
+    return (
+      <ReactFullpage
         //fullpage options
-        licenseKey = {'YOUR_KEY_HERE'}
+        // debug
+        licenseKey={'YOUR_KEY_HERE'}
         scrollingSpeed={1000} /* Options here */
-        sectionsColor={['#000', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000']}
+        sectionsColor={['#000', '#4BBFC3', colors.skills , colors.skillsAlt, '#000']}
         navigation
-        anchors={['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage']}
+        anchors={[
+          'top',
+          'secondPage',
+          'thirdPage',
+          'fourthPage',
+          'lastPage',
+        ]}
         menu='#nav'
+        afterLoad={this.handleAfterLoad}
         render={({ state, fullpageApi }) => {
-            console.log(state);
-            return (
-                <ReactFullpage.Wrapper>
-                    <Hero text='Front-end Developer' clicked={() => fullpageApi.moveSectionDown()}/>
-                    <HeroAlt/>
-                    <div className='section'>
-                        <p>Section 1 (welcome to fullpage.js)</p>
-                        <button onClick={() => fullpageApi.moveSectionDown()}>
-                            Click me to move down
-                        </button>
-                    </div>
-                    <div className='section'>
-                        <p>Section 2</p>
-                    </div>
-                </ReactFullpage.Wrapper>
-            );
+          return (
+            <ReactFullpage.Wrapper>
+              <Hero
+                text='Front-end Developer'
+                clicked={() => fullpageApi.moveSectionDown()}
+              />
+              <HeroAlt />
+              <Skills />
+              <SkillsAlt />
+            </ReactFullpage.Wrapper>
+          );
         }}
-    />
-);
+      />
+    );
+  }
+}
 
 export default Fullpage;

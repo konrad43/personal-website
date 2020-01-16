@@ -1,0 +1,22 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  // width: 80%;
+  
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  background-color: whitesmoke;
+  margin: 20px;
+  @include flex(column, center, center);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #222;
+  // color: #00cec9;
+  
+  i {
+    font-size: 50px;
+    color: #00cec9;
+  }
+}
