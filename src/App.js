@@ -1,14 +1,18 @@
 import React from 'react';
-// import logo from './logo.svg';
-import Fullpage from './components/FullPage/Fullpage';
 import Nav from './components/layout/Nav/Nav'
+import Hero from './components/views/HeroAlt/HeroAlt';
+import About from './components/views/About/About';
+import Skills from './components/views/Skills/Skills';
+
 import './styles/global.scss';
 
 function App() {
   return (
     <div className="App">
-      <Fullpage />
+      <Hero />
       <Nav />
+      <About />
+      <Skills />
     </div>
   );
 }

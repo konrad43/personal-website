@@ -2,27 +2,33 @@
   "skills": [
     {
       "name": "React",
-      "icon": "fab fa-react"
+      "icon": "fab fa-react",
+      "color": "#f1c40f"
     },
     {
       "name": "JavaScript",
-      "icon": "fab fa-js-square"
+      "icon": "fab fa-js-square",
+      "color": "#e67e22"
     },
     {
       "name": "CSS",
-      "icon": "fab fa-css3-alt"
+      "icon": "fab fa-css3-alt",
+      "color": "#e74c3c"
     },
     {
       "name": "HTML",
-      "icon": "fab fa-html5"
+      "icon": "fab fa-html5",
+      "color": "#9b59b6"
     },
     {
       "name": "Python",
-      "icon": "fab fa-python"
+      "icon": "fab fa-python",
+      "color": "#3498db"
     },
     {
       "name": "Git",
-      "icon": "fab fa-git-square"
+      "icon": "fab fa-git-square",
+      "color": "#2ecc71"
     }
   ]
 }

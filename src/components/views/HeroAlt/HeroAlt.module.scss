@@ -1,11 +1,38 @@
-.bg {
+@import '../../../styles/settings.scss';
+
+.component {
   height: 100vh;
   width: 100%;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // text-align: center;
+}
+
+.bg {
+  height: inherit;
+  width: inherit;
   background-image: url(./bg-art.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  background-color: #000;
+  height: inherit;
+  width: inherit;
+  top: 0;
+  opacity: 0.6;
+}
+
+.titleWrapper {
+  @include center();
+  @include flex(column, center, center);
+  color: #fff;
+}
+
+.title {
+  font-size: 56px;
+}
+
+.subtitle {
+  font-size: 20px;
+  padding-bottom: 20px;
 }
