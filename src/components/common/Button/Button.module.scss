@@ -52,5 +52,16 @@
       background-color: $color-primary;
     }
   }
+
+  &.secondary {
+    background-color: #fff;
+    color: #000;
+
+    &.active {
+      // background-color: rgb(0, 91, 165);
+      background: linear-gradient(60deg, #1c699c, #48dbfb);
+      color: #fff;
+    }
+  }
 }
 

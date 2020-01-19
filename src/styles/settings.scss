@@ -9,9 +9,12 @@ $color-success: #218c74;
 $font-header: 'Montserrat', sans-serif;
 $font-text: 'Source Sans Pro', sans-serif;
 
+
 $radius: 5px;
+$title-size: 50px;
 $base-size: 12px;
 $transition: all 0.5s;
+$padding: 76px 0 76px 0;
 
 @mixin p-el($element) {
   &:#{$element}, &::#{$element} {

@@ -30,5 +30,49 @@
       "icon": "fab fa-git-square",
       "color": "#2ecc71"
     }
+  ],
+  "projects" : [
+    {
+      "name": "Cleaning company website",
+      "link": "http://avipok.nazwa.pl/lp/",
+      "image": "https://i.postimg.cc/7h7rYvxh/doczyszczanie.png",
+      "category": "website",
+      "desc":""
+    },
+    {
+      "name": "E-commerce website",
+      "link": "http://sklep.ctservice.com.pl/",
+      "image": "https://i.postimg.cc/jd0r3jX7/Zrzut-ekranu-z-2020-01-18-12-58-04.png",
+      "category": "e-commerce",
+      "desc":""
+    },
+    {
+      "name": "Investment fund homepage",
+      "link": "http://avipok.pl/",
+      "image": "https://i.postimg.cc/8zwQCmVR/Zrzut-ekranu-z-2020-01-18-12-58-49.png",
+      "category": "website",
+      "desc":""
+    },
+    {
+      "name": "Hostel landning page",
+      "link": "https://green-town.pl/",
+      "image": "https://i.postimg.cc/KYzX33Zd/Zrzut-ekranu-z-2020-01-18-12-59-12.png",
+      "category": "website",
+      "desc":""
+    },
+    {
+      "name": "Heath centre management app",
+      "link": "https://health-centre.herokuapp.com/",
+      "image": "https://i.postimg.cc/Df6bhmCt/Zrzut-ekranu-z-2020-01-18-13-42-50.png",
+      "category": "app",
+      "desc":""
+    },
+    {
+      "name": "Personal website",
+      "link": "https://konrad-bonder.pl/",
+      "image": "https://i.postimg.cc/LsXWf6hp/mojecv.png",
+      "category": "website",
+      "desc":""
+    }
   ]
 }

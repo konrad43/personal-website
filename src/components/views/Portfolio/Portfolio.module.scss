@@ -2,19 +2,19 @@
 
 .component {
   @include flex(column, center, center);
-  padding: 76px 0 76px 0;
-  background-color: #fff;
+  padding: $padding;
+  background-color: #eee;
 }
 
 .title {
-  font-size: 50px;
+  font-size: $title-size;
   margin-bottom: 50px;
   color: $color-dark;
 }
 
 .cardWrapper {
-  width: 70%;
-  max-width: 800px;
+  width: 90%;
+  // max-width: 800px;
   @include flex(row, center, center);
   flex-wrap: wrap;
 }

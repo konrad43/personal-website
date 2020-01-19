@@ -1,0 +1,25 @@
+@import '../../../styles/settings.scss';
+
+.card {
+  width: 300px;
+  height: 270px;
+  @include flex(column, center, start);
+  background-color: #fff;
+  margin: 20px;
+  border-radius: $radius;
+  box-shadow: 2px 2px 10px #999;
+  color: $color-dark;
+}
+
+.cardBody {
+  @include flex(column, center, center);
+  height: 100%;
+}
+
+.image {
+  width: inherit;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+  border-bottom: 1px solid #eee;
+  object-fit: contain;
+}
