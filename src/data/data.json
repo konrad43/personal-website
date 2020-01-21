@@ -1,4 +1,22 @@
 {
+  "nav": ["About", "Skills", "Portfolio", "Experience", "Contact"],
+  "about": {
+    "image": "https://img.srgcdn.com/e/w:1000/dWltN0FOZmFtdGZRN2E2N2F4cUkuanBn.jpg",
+    "text": "Quisque quis arcu id risus tristique interdum. Vivamus auctor mauris non felis commodo bibendum. Maecenas eget leo in turpis sagittis faucibus. Nullam vestibulum elit at neque tristique congue. Vivamus venenatis nisi venenatis nisi posuere, ut varius lacus molestie. Etiam euismod nisi in nunc mattis, sit amet tempus neque cursus. ",
+    "bars": [{
+        "text": "Development",
+        "percentage": 85
+      },
+      {
+        "text": "Wordpress",
+        "percentage": 75
+      },
+      {
+        "text": "Marketing",
+        "percentage": 90
+      }
+    ]
+  },
   "skills": [
     {
       "name": "React",
@@ -31,48 +49,101 @@
       "color": "#2ecc71"
     }
   ],
-  "projects" : [
+  "projects": [
     {
       "name": "Cleaning company website",
       "link": "http://avipok.nazwa.pl/lp/",
       "image": "https://i.postimg.cc/7h7rYvxh/doczyszczanie.png",
       "category": "website",
-      "desc":""
+      "desc": ""
     },
     {
       "name": "E-commerce website",
       "link": "http://sklep.ctservice.com.pl/",
       "image": "https://i.postimg.cc/jd0r3jX7/Zrzut-ekranu-z-2020-01-18-12-58-04.png",
       "category": "e-commerce",
-      "desc":""
+      "desc": ""
     },
     {
       "name": "Investment fund homepage",
       "link": "http://avipok.pl/",
       "image": "https://i.postimg.cc/8zwQCmVR/Zrzut-ekranu-z-2020-01-18-12-58-49.png",
       "category": "website",
-      "desc":""
+      "desc": ""
     },
     {
       "name": "Hostel landning page",
       "link": "https://green-town.pl/",
       "image": "https://i.postimg.cc/KYzX33Zd/Zrzut-ekranu-z-2020-01-18-12-59-12.png",
       "category": "website",
-      "desc":""
+      "desc": ""
     },
     {
       "name": "Heath centre management app",
       "link": "https://health-centre.herokuapp.com/",
       "image": "https://i.postimg.cc/Df6bhmCt/Zrzut-ekranu-z-2020-01-18-13-42-50.png",
       "category": "app",
-      "desc":""
+      "desc": ""
     },
     {
       "name": "Personal website",
       "link": "https://konrad-bonder.pl/",
       "image": "https://i.postimg.cc/LsXWf6hp/mojecv.png",
       "category": "website",
-      "desc":""
+      "desc": ""
     }
-  ]
+  ],
+  "experience": [
+    {
+      "title": "Wordpress Freelancer",
+      "date": "05.2018 – Present",
+      "text": "Created and administrated websites in WordPress Marketing materials preparation"
+    },
+    {
+      "title": "Marketing Specialist in Gedeon Medica",
+      "date": "09.2017 – Present",
+      "text": "Prepared and managed online content on website Planned Adwords advertising campaign Introduced new promotion channels"
+    },
+    {
+      "title": "Jr Marketing Specialist in DronHouse",
+      "date": "03.2016-06.2016",
+      "text": "company from the industry of unmanned aerial vehicles (drones). Sales and marketing operations: cold sale, hotleads, fairs and events, cooperation with graphic designers, marketing materials preparation"
+    },
+    {
+      "title": "Own Business",
+      "date": "06.2015-01.2016",
+      "text": "Sales and distribution of cleaning agents. Professional chemistry for companies and for home use, wholesale to stores, participation in fairs and events, retail sales to cleaning companies and car workshops, running own online and stationary shop"
+    }
+  ],
+  "education": [
+    {
+      "title": "Front-end Developer Bootcamp",
+      "date": "08.2019-12.2019",
+      "text": "React, Redux, JavaScript, HTML, Sass, CSS bootcamp in Kodilla"
+    },
+    {
+      "title": "Front-end Developer Bootcamp",
+      "date": "02.2017-06.2017",
+      "text": "JavaScript, Bootstrap, HTML, Sass, CSS bootcamp in jSystems"
+    },
+    {
+      "title": "Warsaw School of Economics",
+      "date": "2012-2018",
+      "text": "BA in International Economic Relation. MSc in Management"
+    }
+  ],
+  "contact": {
+    "Address": {
+      "value": "Warsaw, Poland",
+      "icon": "fas fa-location-arrow"
+    },
+    "Email": {
+      "value": "konrad.bonder@gmail.com",
+      "icon": "fas fa-envelope"
+    },
+    "Phone":  {
+      "value": "+48 693 327 132",
+      "icon": "fas fa-phone-alt"
+    }
+  }
 }

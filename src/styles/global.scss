@@ -20,4 +20,20 @@ a, a:hover, a:visited {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-header;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #222f3e;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 @import "./typography.scss";

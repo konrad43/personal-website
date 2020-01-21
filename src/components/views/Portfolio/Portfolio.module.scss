@@ -13,9 +13,11 @@
 }
 
 .cardWrapper {
-  width: 90%;
-  // max-width: 800px;
+  // width: 90%;
+  width: 100%;
+  max-width: 1200px;
   @include flex(row, center, center);
   flex-wrap: wrap;
+  // position: relative;
 }
 

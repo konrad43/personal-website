@@ -1,4 +1,5 @@
 import React from 'react';
+import {TransitionGroup} from 'react-transition-group';
 
 import Project from '../../common/Project/Project';
 import Button from '../../common/Button/Button';
@@ -17,15 +18,19 @@ class Portfolio extends React.Component {
     });
   };
 
+  // shouldComponentUpdate(){
+  //   return false;
+  // }
+
   render() {
     const buttons = ['all', 'website', 'e-commerce', 'app'];
-    let showProjects;
+    // let showProjects;
 
-    this.state.projects === 'all'
-      ? (showProjects = projects)
-      : (showProjects = projects.filter(
-          project => project.category === this.state.projects
-        ));
+    // this.state.projects === 'all'
+    //   ? (showProjects = projects)
+    //   : (showProjects = projects.filter(
+    //       project => project.category === this.state.projects
+    //     ));
 
     return (
       <div className={styles.component}>
@@ -42,11 +47,11 @@ class Portfolio extends React.Component {
             </Button>
           ))}
         </div>
-        <div className={styles.cardWrapper}>
-          {showProjects.map(project => (
-            <Project {...project} />
+        <TransitionGroup className={styles.cardWrapper}>
+          {projects.map(project => (
+            <Project {...project} show={this.state.projects} />
           ))}
-        </div>
+        </TransitionGroup>
       </div>
     );
   }
