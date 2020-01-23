@@ -5,7 +5,7 @@ import Button from '../../common/Button/Button';
 import styles from './Hero.module.scss';
 
 const Hero = ({ text, clicked }) => (
-  <div className='section'>
+  <div className='section' id='top'>
     <div className={styles.bg}>
       <div className={styles.glitch} data-text={text}>
         {text}

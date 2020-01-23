@@ -1,19 +1,22 @@
 {
-  "nav": ["About", "Skills", "Portfolio", "Experience", "Contact"],
+  "nav": ["About", "Skills", "Portfolio", "Education", "Contact"],
   "about": {
-    "image": "https://img.srgcdn.com/e/w:1000/dWltN0FOZmFtdGZRN2E2N2F4cUkuanBn.jpg",
+    "image": "https://konrad-bonder.pl/wp-content/uploads/2020/01/Photo-medium.png",
     "text": "Quisque quis arcu id risus tristique interdum. Vivamus auctor mauris non felis commodo bibendum. Maecenas eget leo in turpis sagittis faucibus. Nullam vestibulum elit at neque tristique congue. Vivamus venenatis nisi venenatis nisi posuere, ut varius lacus molestie. Etiam euismod nisi in nunc mattis, sit amet tempus neque cursus. ",
     "bars": [{
         "text": "Development",
-        "percentage": 85
+        "percentage": 85,
+        "color": "#e74c3c"
       },
       {
         "text": "Wordpress",
-        "percentage": 75
+        "percentage": 75,
+        "color": "#e67e22"
       },
       {
         "text": "Marketing",
-        "percentage": 90
+        "percentage": 90,
+        "color": "#f1c40f"
       }
     ]
   },
@@ -117,16 +120,19 @@
   ],
   "education": [
     {
+      "id": 1,
       "title": "Front-end Developer Bootcamp",
       "date": "08.2019-12.2019",
       "text": "React, Redux, JavaScript, HTML, Sass, CSS bootcamp in Kodilla"
     },
     {
+      "id": 2,
       "title": "Front-end Developer Bootcamp",
       "date": "02.2017-06.2017",
       "text": "JavaScript, Bootstrap, HTML, Sass, CSS bootcamp in jSystems"
     },
     {
+      "id": 3,
       "title": "Warsaw School of Economics",
       "date": "2012-2018",
       "text": "BA in International Economic Relation. MSc in Management"
@@ -146,7 +152,7 @@
     {
       "name": "Phone",
       "value": "+48 693 327 132",
-      "icon": "fas fa-phone-alt"
+      "icon": "fas fa-phone"
     }
   ]
 }

@@ -11,12 +11,12 @@ const Education = () => (
     <div className={styles.wrapper}>
       <div className={styles.education}>
         {education.map(item => (
-          <CvItem item={item} />
+          <CvItem key={item.id} item={item} />
         ))}
       </div>
       <div className={styles.education}>
         {experience.map(item => (
-          <CvItem item={item} />
+          <CvItem key={item.title} item={item} />
         ))}
       </div>
     </div>

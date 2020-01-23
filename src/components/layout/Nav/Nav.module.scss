@@ -19,11 +19,13 @@
   list-style-type: none;
   text-decoration: none;
   padding: 5px;
+}
 
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
+.link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer;
 }
 
 .logo {

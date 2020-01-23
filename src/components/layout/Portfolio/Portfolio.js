@@ -18,22 +18,11 @@ class Portfolio extends React.Component {
     });
   };
 
-  // shouldComponentUpdate(){
-  //   return false;
-  // }
-
   render() {
     const buttons = ['all', 'website', 'e-commerce', 'app'];
-    // let showProjects;
-
-    // this.state.projects === 'all'
-    //   ? (showProjects = projects)
-    //   : (showProjects = projects.filter(
-    //       project => project.category === this.state.projects
-    //     ));
 
     return (
-      <div className={styles.component}>
+      <div className={styles.component} id='portfolio'>
         <h2 className={styles.title}>Portfolio</h2>
         <div className={styles.buttons}>
           {buttons.map(btn => (
@@ -42,6 +31,7 @@ class Portfolio extends React.Component {
               variant={
                 'secondary' + (this.state.projects === btn ? ' active' : '')
               }
+              key={btn}
             >
               {btn.toUpperCase()}
             </Button>
@@ -49,7 +39,7 @@ class Portfolio extends React.Component {
         </div>
         <TransitionGroup className={styles.cardWrapper}>
           {projects.map(project => (
-            <Project {...project} show={this.state.projects} />
+            <Project key={project.name} {...project} show={this.state.projects} />
           ))}
         </TransitionGroup>
       </div>

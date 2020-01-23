@@ -1,8 +1,15 @@
 @import '../../../styles/settings.scss';
 
 .component {
-  @include flex(row, flex-start, space-between);
   padding: $padding;
+}
+
+.wrapper {
+  @include flex(row, flex-start, space-between);
+}
+
+.sectionTitle {
+  @include section-header();
 }
 
 .image{
