@@ -1,0 +1,22 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  @include flex(row, flex-end, center);
+  background-color: #000;
+  height: 150px;
+  width: 100%;
+}
+
+.wrapper {
+  @include flex(row, flex-end, flex-end);
+  max-width: 1140px;
+  width: inherit;
+  height: inherit;
+}
+
+.title {}
+
+.text {
+  color: #fff;
+  // margin: 0;
+}

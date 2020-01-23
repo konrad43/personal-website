@@ -1,0 +1,22 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  @include flex(column, center, center);
+}
+
+.icon {
+  @include flex(column, center, center);
+  height: 60px;
+  width: 60px;
+  background-color: #eee;
+  border-radius: 50%;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.title {}
+
+.text {
+  color: $color-text-light;
+  margin: 0;
+}

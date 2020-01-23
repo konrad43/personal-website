@@ -4,6 +4,7 @@ $color-background: #f0f0f0;
 $color-primary: #f1c40f;
 $color-secondary: #218c74;
 $color-success: #218c74;
+$color-text-light: #666;
 
 
 // $font-header: 'Montserrat', sans-serif;
@@ -17,11 +18,11 @@ $base-size: 12px;
 $transition: all 0.5s;
 $padding: 76px 0 76px 0;
 
-@mixin p-el($element) {
-  &:#{$element}, &::#{$element} {
-    position: absolute;
-    @content;
-  }
+@mixin section-header() {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #222f3e;
+  text-align: center;
 }
 
 @mixin flex($flex-direction, $align-items, $justify-content) {

@@ -6,7 +6,7 @@ import { education, experience } from '../../../data/data.json';
 import styles from './Education.module.scss';
 
 const Education = () => (
-  <div className={styles.component}>
+  <div className={styles.component} id='education'>
     <h2 className={styles.title}>Education &amp; Experience</h2>
     <div className={styles.wrapper}>
       <div className={styles.education}>

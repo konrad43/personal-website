@@ -1,10 +1,12 @@
 import React from 'react';
 import Nav from './components/layout/Nav/Nav'
-import Hero from './components/views/HeroAlt/HeroAlt';
-import About from './components/views/About/About';
-import Skills from './components/views/Skills/Skills';
-import Portfolio from './components/views/Portfolio/Portfolio';
-import Education from './components/views/Education/Education';
+import Hero from './components/layout/HeroAlt/HeroAlt';
+import About from './components/layout/About/About';
+import Skills from './components/layout/Skills/Skills';
+import Portfolio from './components/layout/Portfolio/Portfolio';
+import Education from './components/layout/Education/Education';
+import Contact from './components/layout/Contact/Contact';
+import Footer from './components/layout/Footer/Footer';
 
 import './styles/global.scss';
 
@@ -13,13 +15,13 @@ function App() {
   return (
     <div className="App">
       <Hero />
-    <div className="container">
       <About />
       <Skills />
       <Portfolio />
       <Education />
+      <Contact />
+      <Footer />
       <Nav />
-    </div>
     </div>
   );
 }

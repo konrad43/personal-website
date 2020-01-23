@@ -132,18 +132,21 @@
       "text": "BA in International Economic Relation. MSc in Management"
     }
   ],
-  "contact": {
-    "Address": {
+  "contact": [
+    {
+      "name": "Address",
       "value": "Warsaw, Poland",
       "icon": "fas fa-location-arrow"
     },
-    "Email": {
+    {
+      "name": "Email",
       "value": "konrad.bonder@gmail.com",
       "icon": "fas fa-envelope"
     },
-    "Phone":  {
+    {
+      "name": "Phone",
       "value": "+48 693 327 132",
       "icon": "fas fa-phone-alt"
     }
-  }
+  ]
 }

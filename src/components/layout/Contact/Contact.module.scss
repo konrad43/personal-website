@@ -1,0 +1,13 @@
+@import '../../../styles/settings.scss';
+
+.component{
+  padding: $padding;
+}
+
+.title {
+  @include section-header();
+}
+
+.wrapper {
+  @include flex(row, center, space-around);
+}
