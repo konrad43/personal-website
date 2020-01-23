@@ -1,10 +1,6 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 
-import Hero from '../views/Hero/Hero';
-import HeroAlt from '../views/HeroAlt/HeroAlt';
-import Skills from '../views/Skills/Skills';
-import SkillsAlt from '../views/Skills2/Skills';
 
 const colors = {
   skills: '#e1e1e1',
@@ -25,27 +21,21 @@ class Fullpage extends React.Component {
         // debug
         licenseKey={'YOUR_KEY_HERE'}
         scrollingSpeed={1000} /* Options here */
-        sectionsColor={['#000', '#4BBFC3', colors.skills , colors.skillsAlt, '#000']}
+        sectionsColor={['#1abc9c', '#4BBFC3', colors.skills , colors.skillsAlt, '#000']}
         navigation
         anchors={[
           'top',
-          'secondPage',
-          'thirdPage',
-          'fourthPage',
-          'lastPage',
+          'about',
+          'skills',
+          'education',
+          'contact',
         ]}
         menu='#nav'
         afterLoad={this.handleAfterLoad}
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
-              <Hero
-                text='Front-end Developer'
-                clicked={() => fullpageApi.moveSectionDown()}
-              />
-              <HeroAlt />
-              <Skills />
-              <SkillsAlt />
+              {this.props.children}
             </ReactFullpage.Wrapper>
           );
         }}
