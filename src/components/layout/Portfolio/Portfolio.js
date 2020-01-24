@@ -19,10 +19,11 @@ class Portfolio extends React.Component {
   };
 
   render() {
+    const { fullpage } = this.props;
     const buttons = ['all', 'website', 'e-commerce', 'app'];
 
     return (
-      <div className={styles.component} id='portfolio'>
+      <div className={styles.component} id={!fullpage ? 'portfolio' : null}>
         <h2 className={styles.title}>Portfolio</h2>
         <div className={styles.buttons}>
           {buttons.map(btn => (

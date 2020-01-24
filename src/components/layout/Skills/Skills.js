@@ -2,11 +2,15 @@ import React from 'react';
 
 import Skill from '../../common/Skill/Skill';
 
-import styles from './Skills.module.scss';
+import stylesLanding from './Skills.module.scss';
+import stylesFullpage from './SkillsFullpage.module.scss';
+
 import { skills } from '../../../data/data.json';
 
-const SkillsAlt = () => (
-    <div className={styles.component} id='skills'>
+const SkillsAlt = ({fullpage}) => {
+  let styles = !fullpage ? stylesLanding : stylesFullpage;
+  return (
+    <div className={styles.component} id={!fullpage ? 'skills' : null}>
         <h2 className={styles.title}>Skills</h2>
         <div className={styles.cardWrapper}>
           {skills.map(skill => (
@@ -15,5 +19,6 @@ const SkillsAlt = () => (
         </div>
     </div>
 );
+}
 
 export default SkillsAlt;

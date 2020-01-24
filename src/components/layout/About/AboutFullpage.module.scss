@@ -1,0 +1,57 @@
+@import '../../../styles/settings.scss';
+
+.wrapper {
+  @include flex(row, flex-start, space-around);
+}
+
+.sectionTitle {
+  @include section-header-light();
+}
+
+.image{
+  @include flex(row, center, center);
+  flex: 0 0 48%;
+
+  img {
+    max-width: 400px;
+  }
+}
+
+.about {
+  max-width: 500px;
+  margin-right: 40px;
+}
+
+.title {
+  font-weight: bold;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.subtitle {
+  font-family: $font-text;
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgb(221, 221, 221);
+}
+
+.text {
+  color: rgb(206, 206, 206);
+}
+
+.bar {
+  margin: 25px 0 25px 0;
+  background-color: #ddd;
+  border-radius: $radius;
+  color: #fff;
+}
+
+.barText{
+  background-color: #000;
+  border-radius: $radius;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  @include flex(row, center, space-between)
+}

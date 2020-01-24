@@ -25,6 +25,13 @@ $padding: 76px 0 76px 0;
   text-align: center;
 }
 
+@mixin section-header-light() {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #fff;
+  text-align: center;
+}
+
 @mixin flex($flex-direction, $align-items, $justify-content) {
   display: flex;
   flex-direction: $flex-direction;

@@ -5,7 +5,7 @@ import TopFullpage from '../../layout/TopFullpage/TopFullpage';
 import FullpageLayout from './Fullpage';
 
 const colors = {
-  skills: '#e1e1e1',
+  skills: '#ecf0f1',
   skillsAlt: '#00cec9',
 }
 
@@ -23,14 +23,15 @@ class Fullpage extends React.Component {
         // debug
         licenseKey={'YOUR_KEY_HERE'}
         scrollingSpeed={1000} /* Options here */
-        sectionsColor={['#1abc9c', '#4BBFC3', colors.skills , colors.skillsAlt, '#000']}
+        sectionsColor={['#1abc9c', '#2980b9', colors.skills , colors.skillsAlt, '#fff', '#8e44ad']}
         navigation
         anchors={[
           'top',
           'about',
           'skills',
+          'portfolio',
           'education',
-          'contact',
+          // 'contact',
         ]}
         menu='#nav'
         afterLoad={this.handleAfterLoad}

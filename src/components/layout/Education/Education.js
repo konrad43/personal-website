@@ -5,7 +5,7 @@ import CvItem from '../../common/CvItem/CvItem';
 import { education, experience } from '../../../data/data.json';
 import styles from './Education.module.scss';
 
-const Education = () => (
+const Education = ({fullpage}) => (
   <div className={styles.component} id='education'>
     <h2 className={styles.title}>Education &amp; Experience</h2>
     <div className={styles.wrapper}>

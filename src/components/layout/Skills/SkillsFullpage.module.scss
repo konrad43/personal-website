@@ -1,0 +1,19 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  @include flex(column, center, center);
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: $color-dark;
+}
+
+.cardWrapper {
+  width: 70%;
+  max-width: 800px;
+  @include flex(row, center, center);
+  flex-wrap: wrap;
+}
+
