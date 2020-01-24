@@ -8,15 +8,15 @@ import React from 'react';
 // import Contact from '../../layout/Contact/Contact';
 // import Footer from '../../layout/Footer/Footer';
 
-import Fullpage from '../../features/FullPage/Fullpage';
+import Fullpage from './FullpageContainer';
 import TopFullpage from '../../layout/TopFullpage/TopFullpage';
 
-function FullpageLayout() {
-  return (
-    <Fullpage>
-      <TopFullpage />
-    </Fullpage>
-  );
-}
+const FullpageLayout = ({fullpageApi}) => (
+  <React.Fragment>
+    <TopFullpage clicked={() => fullpageApi.moveSectionDown()} />
+
+    <div className='section'>lala</div>
+  </React.Fragment>
+);
 
 export default FullpageLayout;

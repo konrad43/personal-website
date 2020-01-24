@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 
+import TopFullpage from '../../layout/TopFullpage/TopFullpage';
+import FullpageLayout from './Fullpage';
 
 const colors = {
   skills: '#e1e1e1',
@@ -35,7 +37,7 @@ class Fullpage extends React.Component {
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
-              {this.props.children}
+              <FullpageLayout state={state} fullpageApi={fullpageApi} />
             </ReactFullpage.Wrapper>
           );
         }}
