@@ -25,6 +25,8 @@ class Fullpage extends React.Component {
         scrollingSpeed={1000} /* Options here */
         sectionsColor={['#1abc9c', '#2980b9', colors.skills , colors.skillsAlt, '#fff', '#8e44ad']}
         navigation
+        responsiveHeight={700}
+        responsiveWidth={1140}
         anchors={[
           'top',
           'about',

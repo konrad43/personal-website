@@ -4,7 +4,9 @@ import {TransitionGroup} from 'react-transition-group';
 import Project from '../../common/Project/Project';
 import Button from '../../common/Button/Button';
 
-import styles from './Portfolio.module.scss';
+import stylesLanding from './Portfolio.module.scss';
+import stylesFullpage from './PortfolioFullpage.module.scss';
+
 import { projects } from '../../../data/data.json';
 
 class Portfolio extends React.Component {
@@ -21,12 +23,13 @@ class Portfolio extends React.Component {
   render() {
     const { fullpage } = this.props;
     const buttons = ['all', 'website', 'e-commerce', 'app'];
+    const styles = fullpage ? stylesFullpage : stylesLanding;
 
     return (
       <div className={styles.component} id={!fullpage ? 'portfolio' : null}>
         <h2 className={styles.title}>Portfolio</h2>
         <div className={styles.buttons}>
-          {buttons.map(btn => (
+          {!fullpage && buttons.map(btn => (
             <Button
               onClick={() => this.handleClick(btn)}
               variant={

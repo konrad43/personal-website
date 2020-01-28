@@ -5,11 +5,18 @@
   position: fixed;
   top: 0;
   width: 100%;
+  transition: $transition;
+}
+
+.darkBg {
+  background-color: #000;
+  transition: $transition;
 }
 
 .menu {
   @include flex(row, center, space-between);
   margin-right: 100px;
+  margin: 5px 100px 5px;
   // position: fixed;
   // top: 0;
 }

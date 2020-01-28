@@ -1,0 +1,34 @@
+@import '../../../styles/settings.scss';
+
+
+.component {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.title {
+  @include section-header();
+  margin: 45px 0 20px 0;
+}
+
+.wrapper {
+  @include flex(row, flex-start, space-around);
+}
+
+.education {
+  flex: 0 0 42%;
+  padding: 10px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 100%;
+    left: 0;
+    background-color: #e7e7e7;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+  }
+}
