@@ -1,0 +1,43 @@
+@import '../../../styles/settings.scss';
+
+.card {
+  border-radius: 7px;
+  // border: 1px solid #1a1a1a;
+  margin: 30px 20px 30px 20px;
+  padding: 10px 40px 10px 40px;
+  position: relative;
+  color: #fff;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: 0px 0px 30px 15px rgb(49, 49, 49);
+    transform: scale(1.1);
+    transition: $transition;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.dark:hover {
+  box-shadow: 0px 0px 20px 10px #eee;
+}
+
+.date {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0 0 8px 0;
+  color: $color-primary;
+}
+
+.text {
+  // color: #666;
+  margin: 0;
+}

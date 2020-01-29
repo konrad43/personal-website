@@ -33,9 +33,24 @@
   }
 
   &.bg {
-    font-size: 36px;
-    padding: $base-size * 1.5;
-    font-weight: normal;
+    font-size: 16px;
+    padding: $base-size * 1.4;
+  }
+
+  &.top {
+    margin-top: 30px;
+    // padding: 15px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all 1s;
+    background-image: linear-gradient(90deg, #fff 50%, transparent 50%);
+    // font-size: 16px;
+    
+    &:hover {
+      color: $color-success;
+      background-color: #fff;
+    }
   }
 
   &.hero {
@@ -46,12 +61,11 @@
     background-image: linear-gradient(90deg, $color-primary 50%, transparent 50%);
 
     &:hover {
-      // color: #fff;
-      // border: 1px solid #fff;
       color: #000;
       background-color: $color-primary;
     }
   }
+
 
   &.secondary {
     background-color: #fff;

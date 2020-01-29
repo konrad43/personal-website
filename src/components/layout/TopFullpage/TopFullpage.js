@@ -9,7 +9,7 @@ const TopFullpage = ({clicked}) => (
     <div className={styles.component}>
       <h1 className={styles.title}>Hi I'm Konrad</h1>
       <h3 className={styles.subtitle}>Front-end Developer</h3>
-      <Button variant='hero' onClick={clicked}>Let's begin</Button>
+      <Button variant='top bg' onClick={clicked}>Let's begin</Button>
     </div>
   </section>
 );

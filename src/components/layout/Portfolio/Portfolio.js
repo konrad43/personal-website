@@ -1,7 +1,8 @@
 import React from 'react';
 import {TransitionGroup} from 'react-transition-group';
 
-import Project from '../../common/Project/Project';
+// import Project from '../../common/Project/Project';
+import Project from '../../common/Project/ProjectFullpage';
 import Button from '../../common/Button/Button';
 
 import stylesLanding from './Portfolio.module.scss';
@@ -43,7 +44,7 @@ class Portfolio extends React.Component {
         </div>
         <TransitionGroup className={styles.cardWrapper}>
           {projects.map(project => (
-            <Project key={project.name} {...project} show={this.state.projects} />
+            <Project key={project.name} {...project} show={this.state.projects}  gallery/>
           ))}
         </TransitionGroup>
       </div>

@@ -4,31 +4,34 @@
 .component {
   max-width: 1140px;
   margin: auto;
+  @include flex(row, flex-start, space-between);
 }
 
 .title {
   @include section-header();
-  margin: 45px 0 20px 0;
+  margin: 100px 0 20px 0;
+  position: relative;
+  flex: 0 0 25%;
+  color: #fff;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 10px;
+    top: -20px;
+    background-color: $color-primary;
+    border-radius: 5px;
+  }
 }
 
 .wrapper {
   @include flex(row, flex-start, space-around);
+  flex: 0 0 75%;
 }
 
 .education {
-  flex: 0 0 42%;
+  // flex: 0 0 42%;
   padding: 10px 0;
   position: relative;
-
-  &::after {
-    content: "";
-    height: 100%;
-    left: 0;
-    background-color: #e7e7e7;
-    margin: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 1px;
-  }
 }

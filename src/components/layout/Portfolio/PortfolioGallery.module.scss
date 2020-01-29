@@ -1,14 +1,12 @@
 @import '../../../styles/settings.scss';
 
 .component {
-  @include flex(row, center, center);
+  @include flex(column, center, center);
 }
 
 .title {
   @include section-header-light();
-  position: absolute;
-  transform: rotate(-90deg);
-  left: 0;
+  margin-bottom: 20px;
 }
 
 .cardWrapper {
