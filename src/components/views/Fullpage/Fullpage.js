@@ -5,8 +5,8 @@ import About from '../../layout/About/AboutFullpage';
 import Skills from '../../layout/Skills/Skills';
 import Portfolio from '../../layout/Portfolio/Portfolio';
 import Education from '../../layout/Education/EducationFullpage';
-// import Contact from '../../layout/Contact/Contact';
-// import Footer from '../../layout/Footer/Footer';
+import Contact from '../../layout/Contact/ContactFullpage';
+import Footer from '../../layout/Footer/Footer';
 
 import Fullpage from './FullpageContainer';
 import TopFullpage from '../../layout/TopFullpage/TopFullpage';
@@ -29,7 +29,10 @@ const FullpageLayout = ({ fullpageApi, state }) => (
     <div className='section'>
       <Education fullpage data={experience} title='Experience' />
     </div>
-    <div className='section'></div>
+    <div className='section'><Contact /></div>
+    <div className='section fp-auto-height'>
+      <Footer />
+    </div>
     <Nav state={state} />
   </React.Fragment>
 );

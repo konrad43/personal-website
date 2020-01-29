@@ -1,0 +1,32 @@
+@import '../../../styles/settings.scss';
+
+.component{
+  @include flex(row, center, center);
+  height: inherit;
+}
+
+.imageWrapper {
+  flex: 0 0 60%;
+  height: 100%;
+  // width: 500px;
+  background-image: url(https://i.postimg.cc/NF5Y8QgP/smartphone-1957740-1920.jpg);
+  background-position: center;
+}
+
+.contactWrapper {
+  flex: 0 0 40%;
+}
+
+.image {
+  height: 100%;
+  // width: inherit;
+  object-fit: cover;
+}
+
+.title {
+  @include section-header();
+}
+
+.wrapper {
+  @include flex(column, center, space-around);
+}

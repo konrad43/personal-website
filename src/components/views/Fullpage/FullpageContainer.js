@@ -7,14 +7,14 @@ import FullpageLayout from './Fullpage';
 const colors = {
   skills: '#ecf0f1',
   portfolio: '#27ae60',
-}
+};
 
 class Fullpage extends React.Component {
   state = {
     page: '',
   };
-  
-  handleAfterLoad = (_, dest) => this.setState({page: dest.anchor});
+
+  handleAfterLoad = (_, dest) => this.setState({ page: dest.anchor });
 
   render() {
     return (
@@ -23,7 +23,15 @@ class Fullpage extends React.Component {
         // debug
         licenseKey={'YOUR_KEY_HERE'}
         scrollingSpeed={1000} /* Options here */
-        sectionsColor={['#27ae60', '#2980b9', colors.skills , colors.portfolio, '#2a0273', '#fff']}
+        sectionsColor={[
+          '#27ae60',
+          '#2980b9',
+          colors.skills,
+          colors.portfolio,
+          '#2a0273',
+          '#fff',
+          // '#27ae60'
+        ]}
         navigation
         responsiveHeight={700}
         responsiveWidth={1140}
@@ -34,7 +42,8 @@ class Fullpage extends React.Component {
           'portfolio',
           'education',
           'experience',
-          // 'contact',
+          'contact',
+          'footer'
         ]}
         menu='#nav'
         afterLoad={this.handleAfterLoad}
