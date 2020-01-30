@@ -2,10 +2,19 @@
 
 .wrapper {
   @include flex(row, flex-start, space-around);
+  
+  @media (max-width: 676px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .sectionTitle {
   @include section-header-light();
+
+  @media (max-width: 676px) {
+    margin-top: 50px;
+  }
 }
 
 .image{
@@ -14,12 +23,20 @@
 
   img {
     max-width: 400px;
+
+    @media (max-width: 676px) {
+      width: 90%;
+    }
   }
 }
 
 .about {
   max-width: 500px;
   margin-right: 40px;
+
+  @media (max-width: 676px) {
+    margin: 50px 20px 50px 20px;
+  }
 }
 
 .title {
@@ -44,7 +61,7 @@
   margin: 25px 0 25px 0;
   background-color: #ddd;
   border-radius: $radius;
-  color: #fff;
+  // color: #fff;
 }
 
 .barText{

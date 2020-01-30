@@ -5,9 +5,12 @@
 }
 
 .title {
-  font-size: 50px;
-  margin-bottom: 50px;
-  color: $color-dark;
+  @include section-header();
+
+  @media (max-width: 676px) {
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
 }
 
 .cardWrapper {
@@ -15,5 +18,9 @@
   max-width: 800px;
   @include flex(row, center, center);
   flex-wrap: wrap;
+
+  @media (max-width: 676px) {
+    width: 80%;
+  }
 }
 

@@ -5,6 +5,10 @@
   background-color: #000;
   height: 150px;
   width: 100%;
+
+  @media (max-width: 676px) {
+    margin-top: 80px;
+  }
 }
 
 .wrapper {
@@ -14,9 +18,11 @@
   height: inherit;
 }
 
-.title {}
 
 .text {
   color: #fff;
-  // margin: 0;
+
+  @media (max-width: 676px) {
+    margin-right: 20px;
+  }
 }

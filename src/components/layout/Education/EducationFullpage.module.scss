@@ -5,6 +5,10 @@
   max-width: 1140px;
   margin: auto;
   @include flex(row, flex-start, space-between);
+
+  @media (max-width: 676px) {
+    @include flex(column, center, center);
+  }
 }
 
 .title {
@@ -22,6 +26,11 @@
     top: -20px;
     background-color: $color-primary;
     border-radius: 5px;
+
+    @media (max-width: 676px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
@@ -34,4 +43,8 @@
   // flex: 0 0 42%;
   padding: 10px 0;
   position: relative;
+
+  @media (max-width: 676px) {
+    padding-bottom: 60px;
+  }
 }

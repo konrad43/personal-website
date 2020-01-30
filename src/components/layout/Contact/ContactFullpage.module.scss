@@ -3,6 +3,11 @@
 .component{
   @include flex(row, center, center);
   height: inherit;
+
+  @media (max-width: 676px) {
+    // background-color: #eee;
+    // padding: 50px 0 50px 0;
+  }
 }
 
 .imageWrapper {
@@ -11,6 +16,10 @@
   // width: 500px;
   background-image: url(https://i.postimg.cc/NF5Y8QgP/smartphone-1957740-1920.jpg);
   background-position: center;
+
+  @media (max-width: 676px) {
+    display: none;
+  }
 }
 
 .contactWrapper {
@@ -25,6 +34,10 @@
 
 .title {
   @include section-header();
+
+  @media (max-width: 676px) {
+    margin-top: 50px;
+  }
 }
 
 .wrapper {
