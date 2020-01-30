@@ -10,7 +10,11 @@
 }
 
 .title {
-  font-size: 46px;
+  font-size: 56px;
+
+  @media (max-width: 676px) {
+    font-size: 46px;
+  }
 }
 
 .subtitle {

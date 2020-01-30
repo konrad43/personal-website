@@ -6,6 +6,7 @@
 
 .title {
   @include section-header();
+  font-size: 3rem;
 
   @media (max-width: 676px) {
     font-size: 36px;
