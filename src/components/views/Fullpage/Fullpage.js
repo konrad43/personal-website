@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../../layout/Nav/NavFullpage';
+import NavMobile from '../../features/NavMobile/NavMobile';
 // import Hero from '../../layout/HeroAlt/HeroAlt';
 import About from '../../layout/About/AboutFullpage';
 import Skills from '../../layout/Skills/Skills';
@@ -33,7 +34,8 @@ const FullpageLayout = ({ fullpageApi, state }) => (
     <div className='section fp-auto-height'>
       <Footer />
     </div>
-    <Nav state={state} />
+    {window.innerWidth > 676 ? <Nav state={state} /> : <NavMobile />}
+    
   </React.Fragment>
 );
 

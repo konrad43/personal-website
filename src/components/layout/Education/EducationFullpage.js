@@ -15,7 +15,7 @@ const Education = ({ fullpage, data, title }) => (
     <div className={styles.wrapper}>
       <div className={styles.education}>
         {data.map(item => (
-          <CvItem key={item.id} item={item} fullpage dark={title === 'Experience'}/>
+          <CvItem key={item.date} item={item} fullpage dark={title === 'Experience'}/>
         ))}
       </div>
     </div>

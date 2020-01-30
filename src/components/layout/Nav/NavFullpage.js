@@ -1,5 +1,7 @@
 import React from 'react';
 
+import NavItems from '../../common/NavItems/NavItems';
+
 import styles from './NavFullpage.module.scss';
 
 const Nav = ({state}) => {
@@ -11,13 +13,7 @@ const Nav = ({state}) => {
   return (
     <nav className={styles.component + (darkBg ? ` ${styles.darkBg}` : '')} id='nav'>
       <ul className={styles.menu}>
-        {['Top', 'About', 'Skills', 'Portfolio', 'Education', 'Experience', 'Contact'].map(item => (
-          <li key={item} className={styles.listItem} data-menuanchor={item.toLowerCase()}>
-            <a href={`#${item.toLowerCase()}`} className={styles.link}>
-              {item}
-            </a>
-          </li>
-        ))}
+        <NavItems />
       </ul>
     </nav>
   );
